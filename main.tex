@@ -1,0 +1,109 @@
+\documentclass[
+  final,
+  babelLanguage=portuguese,
+  desktopVersion,
+  %showtrims,
+  %overleaf,
+]{anecdote}
+
+%\graphicspath{{./assets/photos/300dpi/}}
+\graphicspath{{./assets/photos/92dpi/}}
+
+% Page size: 6x9 inch
+% Body text: 10.5 / 15 pt
+
+\usepackage{local}
+
+%% Details of the book
+%% ===================
+
+\title{O Kamma e o Fim do Kamma}
+\subtitle{}
+\author{Ajahn Sucitto}
+\publisher{Publicações Sumedhārāma}
+\date{2023-11-15}
+\editionInfo{\textit{Primeira edição}, 2024}
+\ISBN{978-989-8994-43-1}
+
+% === Metadata ===
+
+\hypersetup{
+  pdftitle={\thetitle},
+  pdfauthor={\theauthor},
+  pdfcopyright={Copyright (C) 2024, \thePublisher},
+  pdfsubject={},
+  pdfkeywords={},
+  pdflicenseurl={https://creativecommons.org/licenses/by-nc-nd/4.0/},
+  pdfcontacturl={},
+  pdflang={en},
+}
+
+% \pdfinfo{%
+%   /Title (\thetitle)%
+%   /Author (\theauthor)
+%   /Subject (subject)% TODO subject
+%   /Keywords (keywords)% TODO keywords
+%   /GTS_PDFXVersion (PDF/X-1:2001)%
+%   /GTS_PDFXConformance (PDF/X-1a:2001)%
+% }
+
+%% === Load further packages ===
+
+\makepagenote
+
+%% === Hyphenation exceptions and corrections ===
+
+\hyphenation{London}
+
+\begin{document}
+
+\frontmatter
+
+\ifdesktopversion
+\desktopCover{\includegraphics[height=\paperheight]{./desktop-cover.png}}
+\fi
+
+\input{./manuscript/tex/titlepage.tex}
+
+\input{./manuscript/tex/copyright.tex}
+
+\input{./manuscript/tex/dedication.tex}
+
+\input{./manuscript/tex/opening-quote.tex}
+
+\cleartorecto
+\tableofcontents*
+
+\input{./manuscript/tex/00-prefacio.tex}
+
+\input{./manuscript/tex/00-nota-do-editor.tex}
+
+% Page 1 is the first page of the first chapter.
+\mainmatter
+
+\input{./manuscript/tex/01-onde-existe.tex}
+\input{./manuscript/tex/02-meditacao.tex}
+\input{./manuscript/tex/03-kamma-luminoso.tex}
+\input{./manuscript/tex/04-meditacao.tex}
+\input{./manuscript/tex/05-kamma-da-meditacao.tex}
+\input{./manuscript/tex/06-meditacao.tex}
+\input{./manuscript/tex/07-kamma-e-memoria.tex}
+\input{./manuscript/tex/08-meditacao.tex}
+\input{./manuscript/tex/09-observar-o-mundo.tex}
+\input{./manuscript/tex/10-meditacao.tex}
+\input{./manuscript/tex/11-relacionamentos.tex}
+\input{./manuscript/tex/12-meditacao.tex}
+\input{./manuscript/tex/13-existe-um-fim.tex}
+\input{./manuscript/tex/14-meditacao.tex}
+
+\backmatter
+
+\input{./manuscript/tex/99-notas-finais.tex}
+
+\input{./manuscript/tex/glossary.tex}
+
+\input{./manuscript/tex/copyright-details.tex}
+
+\emptyUntilEven
+
+\end{document}
