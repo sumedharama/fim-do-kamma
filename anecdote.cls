@@ -1030,7 +1030,7 @@ philo-sophical munindo amaravati thai-land}
 {}
 
 \titlecontents{chapter}[\tocLeftWidth]
-{\addvspace{15pt}\fontsize{13}{13}\gentiumFont\selectfont}%
+{\addvspace{10pt}\fontsize{13}{13}\gentiumFont\selectfont}%
 {\contentsmargin{0pt}\thecontentslabel.\space}
 {\contentsmargin{0pt}%
 \itshape}
