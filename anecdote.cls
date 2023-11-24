@@ -328,6 +328,8 @@
   \addto\captionsportuguese{
     \renewcommand{\contentsname}{Índice}
     \renewcommand{\bibname}{Referências}
+    \renewcommand*{\pagerefname}{página}
+    \renewcommand*{\notesname}{Notas}
   }
   % Portuguese repeats hyphen
   % http://tex.stackexchange.com/a/247298/831
@@ -828,6 +830,8 @@ philo-sophical munindo amaravati thai-land}
 
 % === Renewing package macros ===
 
+
+
 % NOTE: Uncomment below if you need a \mainmatter which doesn't add blank pages.
 % Useful to insert a picture before the first chapter, which otherwise would
 % have a double blank page before it.
@@ -882,13 +886,25 @@ philo-sophical munindo amaravati thai-land}
   \vspace*{7pt}%
   \kern 2.6\p@}
 
+\newenvironment{pagenoteblock}%
+{\list{}{%
+    \listparindent 0pt
+    \itemindent    \listparindent
+    \leftmargin    \quoteMargin
+    \rightmargin   0pt
+    \parsep        8pt
+    \topsep        0pt
+    \partopsep     0pt}%
+\item[]}%
+{\endlist}
+
 \renewcommand*{\notesname}{Notes}
 \renewcommand*{\notedivision}{\chapter{\notesname}}
 %\renewcommand*{\notedivision}{\section*{\notesname}}
 \renewcommand*{\pagenotesubhead}[3]{}
 \renewcommand*{\notenumintext}[1]{\textsuperscript{\thinspace [#1]}}
-\renewcommand{\prenoteinnotes}{\par\noindent\hangindent=17pt}
-\renewcommand{\postnoteinnotes}{\par\vspace*{0.5\baselineskip}}
+\renewcommand{\prenoteinnotes}{\par\noindent\begin{pagenoteblock}\hspace*{-\quoteMargin}}
+\renewcommand{\postnoteinnotes}{\end{pagenoteblock}}
 
 % === Page styles ===
 
