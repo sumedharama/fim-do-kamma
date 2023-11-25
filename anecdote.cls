@@ -221,7 +221,8 @@
 \newcommand\chapterAuthorFont\butlerFont
 \newcommand\chapterNoteFont\butlerFont
 
-\newcommand\sectionFont\accanthisFont
+\newcommand\sectionFont\butlerExtraLightFont
+\newcommand\subSectionFont\accanthisFont
 
 % quote
 
@@ -876,6 +877,7 @@ philo-sophical munindo amaravati thai-land}
 }
 
 \addtodef{\backmatter}{}{%
+  \addtocontents{toc}{\addvspace{15pt}}%
   \bookmarksetup{startatroot}%
 }
 
@@ -980,7 +982,7 @@ philo-sophical munindo amaravati thai-land}
 
 % === TOC settings ===
 
-\maxtocdepth{chapter}
+\maxtocdepth{section}
 
 % the right TOC margin
 \contentsmargin{-5pt}
@@ -1046,10 +1048,16 @@ philo-sophical munindo amaravati thai-land}
 {}
 
 \titlecontents{chapter}[\tocLeftWidth]
-{\addvspace{10pt}\fontsize{13}{13}\gentiumFont\selectfont}%
+{\addvspace{15pt}\fontsize{13}{13}\gentiumFont\selectfont}%
 {\contentsmargin{0pt}\thecontentslabel.\space}
 {\contentsmargin{0pt}%
 \itshape}
+{\hfill\normalsize\tocFont\thecontentspage}
+
+\titlecontents{section}[\tocLeftWidth]
+{\addvspace{5pt}\fontsize{11}{13}\gentiumFont\selectfont}%
+{\contentsmargin{0pt}\hspace*{1pc}\thecontentslabel.\space}
+{\contentsmargin{0pt}\hspace*{1pc}}
 {\hfill\normalsize\tocFont\thecontentspage}
 
 \titlecontents{appendix}[\tocLeftWidth]
@@ -1600,7 +1608,7 @@ philo-sophical munindo amaravati thai-land}
 \setbeforesecskip{-5.5ex \@plus -1ex \@minus -.2ex}
 \setaftersecskip{2.3ex}
 
-\setbeforesubsecskip{-3.5ex \@plus -1ex \@minus -.2ex}
+\setbeforesubsecskip{-5.5ex \@plus -1ex \@minus -.2ex}
 \setaftersubsecskip{2.3ex}
 
 \setbeforesubsubsecskip{-3.5ex \@plus -1ex \@minus -.2ex}
@@ -1611,17 +1619,17 @@ philo-sophical munindo amaravati thai-land}
 %\setsechook{\setsecnumformat{\thesection.\space}}
 
 \newcommand\sectionFmt[1]{%
-  \sectionFont\fontsize{11.5}{14}\selectfont%
-  \color{section}%
+  \sectionFont\fontsize{20}{20}\selectfont%
+  \color{black}%
   \centering
-  \textit{#1}%
+  #1%
 }
 
 \newcommand\subsectionFmt[1]{%
-  \sectionFont\fontsize{10}{13}\selectfont%
+  \subSectionFont\fontsize{11.5}{14}\selectfont%
   \color{section}%
-  \memRTLraggedright%
-  \textls{\MakeUppercase{#1}}%
+  \centering
+  \textit{#1}%
 }
 
 \newcommand\subsubsectionFmt[1]{%
