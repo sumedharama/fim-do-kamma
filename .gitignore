@@ -2,6 +2,8 @@
 output/
 main.pdf
 doc/*.html
+chapters.tex
+chapters.tex.md
 
 # Emacs temp files
 auto/
