@@ -1,4 +1,38 @@
 [#copyright, colophon]
 = Copyright
 
-CC-BY-NC-ND 4.0
+{booktitle} +
+por {author}
+
+Publicações Sumedhārāma +
+link:http://sumedharama.pt[www.sumedharama.pt]
+
+Este livro encontra-se disponível para distribuição gratuita em +
+link:http://forestsangha.org/[www.forestsangha.org]
+
+Digital Edition {version}
+
+ePub ISBN {isbn}
+
+This electronic edition was published on {revdate}
+
+Copyright © Publicações Sumedhārāma 2023
+
+Tradutor: Alda Santos +
+Editor: Appamādo Bhikkhu +
+Capa: Phāsuko Bhikkhu +
+Formatação: Gambhīro Bhikkhu
+
+Traduzido do original ‘Kamma and the End of Kamma’ +
+Publicado por Amaravati Publications
+
+Amaravati Buddhist Monastery +
+Hertfordshire, Great Britain +
+publications@amaravati.org
+
+image::cc-by-nc-nd.png[creative commons, role=cc-icon]
+
+Este trabalho está licenciado com uma Licença Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional.
+
+<http://creativecommons.org/licenses/by-nc-nd/4.0/>
+
