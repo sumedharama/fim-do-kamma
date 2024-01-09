@@ -14,7 +14,7 @@ link:{publisher-link-url}[{publisher-link-name}]
 
 <<<<<<<<
 
-[quote, role=quote]
+[quote, role=quote-center]
 ____
 Dedicado a
 
