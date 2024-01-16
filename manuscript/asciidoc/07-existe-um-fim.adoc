@@ -1,5 +1,6 @@
 = Existe um Fim?
 
+[role=chapter-subtitle]
 _Auto-reflexão_
 
 [quote, role=quote]

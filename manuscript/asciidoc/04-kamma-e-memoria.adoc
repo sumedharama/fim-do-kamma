@@ -1,5 +1,6 @@
 = Kamma e Memória
 
+[role=chapter-subtitle]
 _Limpar o passado_
 
 [quote, role=quote]

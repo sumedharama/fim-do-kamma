@@ -1,5 +1,6 @@
 = Observar o Mundo
 
+[role=chapter-subtitle]
 _Compreender as dinâmicas_
 
 [quote, role=quote]
